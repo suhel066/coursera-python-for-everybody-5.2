@@ -2,10 +2,11 @@ largest = None
 smallest = None
 
 while True:
-    inp = input("Enter a number: ")
-    if inp == "done" : break
+    user_input = input("Enter a number: ")
+    if user_input == "done" :
+        break
     try:
-        num = float(inp)
+        num = float(user_input)
     except:
        # print "Please enter a number as input or \'done\'"
         print ("Invalid input")
@@ -20,6 +21,7 @@ while True:
         smallest = num
 
 
-print ("Maximum is", int(largest) ) 
+print ("Maximum is", int(largest)) 
 print ("Minimum is", int(smallest))
+
 
